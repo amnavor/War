@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
@@ -19,24 +19,12 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="w0l-0N-W25" userLabel="Background">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <color key="backgroundColor" red="0.57588467641330454" green="0.6613032132894634" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ls5-gN-0GT" userLabel="Card1">
-                                <rect key="frame" x="0.0" y="215" width="120" height="170"/>
-                                <color key="backgroundColor" red="1" green="0.66980151201539373" blue="0.33258660105912807" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="120" id="Hvs-AO-e1D"/>
-                                    <constraint firstAttribute="height" constant="170" id="wY8-lM-D1f"/>
-                                </constraints>
-                                <variation key="heightClass=compact-widthClass=regular" ambiguous="YES" misplaced="YES">
-                                    <rect key="frame" x="70" y="115" width="120" height="170"/>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=regular" ambiguous="YES" misplaced="YES">
-                                    <rect key="frame" x="70" y="315" width="120" height="170"/>
-                                </variation>
+                                <animations/>
+                                <color key="backgroundColor" red="1" green="0.80000001192092896" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AFR-YN-TxG" userLabel="Card2">
                                 <rect key="frame" x="0.0" y="215" width="120" height="170"/>
+                                <animations/>
                                 <color key="backgroundColor" red="1" green="0.66980151200000004" blue="0.33258660109999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="170" id="6U6-Wj-8ke"/>
@@ -51,14 +39,31 @@
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kMw-T2-DrL">
                                 <rect key="frame" x="285" y="0.0" width="31" height="30"/>
+                                <animations/>
                                 <state key="normal" title="Deal"/>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ls5-gN-0GT" userLabel="Card1">
+                                <rect key="frame" x="0.0" y="215" width="120" height="170"/>
+                                <animations/>
+                                <color key="backgroundColor" red="1" green="0.50196081399917603" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="Hvs-AO-e1D"/>
+                                    <constraint firstAttribute="height" constant="170" id="wY8-lM-D1f"/>
+                                </constraints>
+                                <variation key="heightClass=compact-widthClass=regular" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="70" y="115" width="120" height="170"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="70" y="315" width="120" height="170"/>
+                                </variation>
+                            </imageView>
                         </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="AFR-YN-TxG" secondAttribute="trailing" constant="50" id="12H-1w-CIx"/>
+                            <constraint firstAttribute="trailing" secondItem="AFR-YN-TxG" secondAttribute="trailing" constant="30" id="12H-1w-CIx"/>
                             <constraint firstItem="kMw-T2-DrL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2dD-ny-H3K"/>
-                            <constraint firstItem="Ls5-gN-0GT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="50" id="3DP-Sv-y0n"/>
+                            <constraint firstItem="Ls5-gN-0GT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="3DP-Sv-y0n"/>
                             <constraint firstAttribute="trailing" secondItem="w0l-0N-W25" secondAttribute="trailing" id="94N-zM-0Xt"/>
                             <constraint firstAttribute="bottom" secondItem="kMw-T2-DrL" secondAttribute="bottom" constant="52" id="DBZ-O2-Iu3"/>
                             <constraint firstItem="AFR-YN-TxG" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="RFv-QY-nas"/>
@@ -72,25 +77,25 @@
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="3DP-Sv-y0n"/>
-                                <exclude reference="xWA-bS-iyu"/>
                                 <exclude reference="12H-1w-CIx"/>
                                 <exclude reference="bY4-gK-4bj"/>
+                                <exclude reference="3DP-Sv-y0n"/>
+                                <exclude reference="xWA-bS-iyu"/>
                                 <exclude reference="DBZ-O2-Iu3"/>
                                 <exclude reference="pfC-b7-Cus"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact">
                             <mask key="constraints">
-                                <include reference="xWA-bS-iyu"/>
                                 <include reference="bY4-gK-4bj"/>
+                                <include reference="xWA-bS-iyu"/>
                                 <include reference="DBZ-O2-Iu3"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="constraints">
-                                <include reference="3DP-Sv-y0n"/>
                                 <include reference="12H-1w-CIx"/>
+                                <include reference="3DP-Sv-y0n"/>
                                 <include reference="pfC-b7-Cus"/>
                             </mask>
                         </variation>
