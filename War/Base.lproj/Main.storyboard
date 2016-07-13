@@ -37,11 +37,6 @@
                                     <rect key="frame" x="70" y="315" width="120" height="170"/>
                                 </variation>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kMw-T2-DrL">
-                                <rect key="frame" x="285" y="0.0" width="31" height="30"/>
-                                <animations/>
-                                <state key="normal" title="Deal"/>
-                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ls5-gN-0GT" userLabel="Card1">
                                 <rect key="frame" x="0.0" y="215" width="120" height="170"/>
                                 <animations/>
@@ -57,6 +52,11 @@
                                     <rect key="frame" x="70" y="315" width="120" height="170"/>
                                 </variation>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kMw-T2-DrL">
+                                <rect key="frame" x="285" y="0.0" width="31" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Deal"/>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -100,6 +100,12 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="backgroundImageView" destination="w0l-0N-W25" id="Lpl-Lj-xDO"/>
+                        <outlet property="firstCardImageView" destination="Ls5-gN-0GT" id="gnh-bh-gnb"/>
+                        <outlet property="playRoundButton" destination="kMw-T2-DrL" id="5bU-Qh-uPy"/>
+                        <outlet property="secondCardImageView" destination="AFR-YN-TxG" id="sEK-Gf-KwG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
