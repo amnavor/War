@@ -14,7 +14,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var secondCardImageView: UIImageView!
     @IBOutlet weak var playRoundButton: UIButton!
     @IBOutlet weak var backgroundImageView: UIImageView!
-    
+    @IBOutlet weak var PlayerScoreLabel: UILabel!
+    @IBOutlet weak var EnemyScoreLabel: UILabel!
+    var playerScore:Int = 0
+    var enemyScore:Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,13 +43,15 @@ class ViewController: UIViewController {
         
         //determine winner
         if firstRandomNumber > secondRandomNumber {
-            //TODO
+            self.playerScore += 1
+            self.PlayerScoreLabel.text = String(self.playerScore)
         }
         else if firstRandomNumber == secondRandomNumber {
-            //TODO
+            //leave this
         }
         else {
-            //TODO
+            self.enemyScore += 1
+            self.EnemyScoreLabel.text = String(self.enemyScore)
         }
     }
 
