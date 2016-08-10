@@ -1,5 +1,5 @@
 An iOS app for the War card game.
 
-![screenshot](https://cloud.githubusercontent.com/assets/12720744/17544821/6ea5e48c-5e8e-11e6-8e68-91549c4896e3.png)
+![war](https://cloud.githubusercontent.com/assets/12720744/17568819/43cd551c-5efa-11e6-94f7-0cc925886f4b.gif)
 
 Original artwork
